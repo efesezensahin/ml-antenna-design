@@ -1,0 +1,19 @@
+# Python Bytecode & Environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+
+# CST Studio Temp Files & Database Locks
+*.bak
+*.tmp
+*.log
+*.sdb-wal
+*.sdb-shm
+
+# Diagnostics / Scratch Files
+test_*.py
+inspect_*.py
+check_results.py

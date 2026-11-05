@@ -1,0 +1,30 @@
+project:
+  name: "2.4 GHz Microstrip Patch Antenna Optimization"
+  cst_project_path: ""C:\\path\\to\\your\\microstrippatch_2.4ghz_forml.cst""
+
+parameters:
+  anty:
+    min: 27.0
+    max: 34.0
+    description: "Patch length (primary resonant dimension in mm)"
+  antx:
+    min: 40.0
+    max: 54.0
+    description: "Patch width (radiating aperture & bandwidth in mm)"
+  insy:
+    min: 4.0
+    max: 10.0
+    description: "Inset feed notch depth (input impedance real part in mm)"
+  insx:
+    min: 0.8
+    max: 2.5
+    description: "Inset feed gap width (input impedance imaginary part in mm)"
+
+objectives:
+  target_frequency_ghz: 2.40
+  mode: "balanced"  # Options: "balanced", "max_bandwidth", "deep_s11"
+
+# Safety Constraints (Prevents the optimizer from exploring unusable solutions):
+constraints:
+  max_freq_drift_mhz: 25.0       # Resonance cannot deviate more than 25 MHz from 2.4 GHz
+  min_acceptable_s11_db: -10.0   # S11 must be below -10 dB threshold
