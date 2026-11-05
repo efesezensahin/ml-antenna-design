@@ -1,9 +1,9 @@
 # 📡 Active Learning & Bayesian Optimization for Automated Antenna Design
 
-[[https://img.shields.io/badge/python-3.10+-blue.svg]](https://www.python.org/downloads/)
-[[https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg]](https://pytorch.org/)
-[[https://img.shields.io/badge/BoTorch-0.10+-red.svg]](https://botorch.org/)
-[[https://img.shields.io/badge/License-MIT-yellow.svg]](https://opensource.org/licenses/MIT)
+[https://img.shields.io/badge/python-3.10+-blue.svg]
+[https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg]
+[https://img.shields.io/badge/BoTorch-0.10+-red.svg]
+[https://img.shields.io/badge/License-MIT-yellow.svg]
 
 An open-source, sample-efficient **Active Learning (Bayesian Optimization)** framework designed to automate radio frequency (RF) antenna design. The framework bridges modern machine learning (Meta's BoTorch & PyTorch) with 3D full-wave electromagnetic (EM) solvers (Dassault Systèmes CST Studio Suite) to optimize multi-parameter antenna geometries in a fraction of the traditional simulation budget.
 
